@@ -206,6 +206,10 @@ Delete files generated in the previous run, default is "Yes".
 
 Do not print any messages to the console, default is "No".
 
+```--colorize <yes|no>```
+
+Colorize console output, default is "Yes".
+
 ```--progressbar <yes|no>```
 
 Display progressbars, default is "Yes".

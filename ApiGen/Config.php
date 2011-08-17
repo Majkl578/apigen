@@ -67,6 +67,7 @@ class Config
 		'undocumented' => '',
 		'wipeout' => true,
 		'quiet' => false,
+		'colorize' => true,
 		'progressbar' => true,
 		'debug' => false
 	);
@@ -401,6 +402,7 @@ Options:
 	@option@--undocumented@c     <@value@file@c>      Save a list of undocumented classes, methods, properties and constants into a file
 	@option@--wipeout@c          <@value@yes@c|@value@no@c>    Wipe out the destination directory first, default "@value@yes@c"
 	@option@--quiet@c            <@value@yes@c|@value@no@c>    Don't display scaning and generating messages, default "@value@no@c"
+	@option@--colorize@c         <@value@yes@c|@value@no@c>    Colorize console output, default "@value@yes@c"
 	@option@--progressbar@c      <@value@yes@c|@value@no@c>    Display progressbars, default "@value@yes@c"
 	@option@--debug@c            <@value@yes@c|@value@no@c>    Display additional information in case of an error, default "@value@no@c"
 	@option@--help@c|@option@-h@c                      Display this help

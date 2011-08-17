@@ -47,6 +47,8 @@ undocumented: ''
 wipeout: Yes
 # Don't display scaning and generating messages
 quiet: No
+# Colorize console output
+colorize: Yes
 # Display progressbars
 progressbar: Yes
 # Display additional information in case of an error

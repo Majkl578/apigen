@@ -1073,7 +1073,9 @@ class Generator extends Nette\Object
 	}
 
 	/**
-	 * Colorizes message or removes placeholders if OS doesn't support colors.
+	 * Colorizes message
+	 * Removes placeholders if colorizing is disabled
+	 * or OS doesn't support colors.
 	 *
 	 * @param string $message
 	 * @return string
@@ -1089,8 +1091,8 @@ class Generator extends Nette\Object
 			'@c' => "\x1b[0m"
 		);
 
-		// Windows doesn't support colors
-		if ('WIN' === substr(PHP_OS, 0, 3)) {
+		// Only remove placeholders if colorizing is disabled, Windows doesn't support colors
+		if (!$this->config->colorize || 'WIN' === substr(PHP_OS, 0, 3)) {
 			$placeholders = array_fill_keys(array_keys($placeholders), '');
 		}
 
